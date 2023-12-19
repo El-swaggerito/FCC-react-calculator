@@ -1,0 +1,160 @@
+:root{
+  --white: #fff;
+  --light-gray: #f0f0f091;
+  --dark-gray: #242424;
+  --black: #000;
+  --yellow: #c9801a;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#calculator{
+  display: grid;
+  grid-template-areas:
+  "display display display display"
+  "clear negative percentage divide"
+  "seven eight nine multiply"
+  "four five six subtract"
+  "one two three add"
+  "zero zero decimal equals"
+  ;
+  grid-template-columns: 100px 100px 100px 100px;
+  gap: 20px;
+  padding: 50px;
+  padding-top: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: var(--black);
+}
+
+.light-gray{
+  background-color: var(--light-gray);
+}
+
+.dark-gray{
+  background-color: var(--dark-gray);
+  color: var(--white);
+}
+
+.red{
+  background-color: var(--red);
+}
+
+.yellow{
+  background-color: var(--yellow);
+  color: var(--white);
+}
+
+button{
+  height: 100px;
+  font-size: 35px;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  width: 100%;
+  transition: transform 0.1s ease-in-out;
+}
+
+button:active{
+  transform: scale(0.95);
+}
+
+#answer{
+  font-size: 48px;
+  height: 48px;
+  color: var(--white);
+}
+
+#expression{
+  font-size: 30px;
+  height: 30px;
+  color: var(--white);
+}
+
+#clear{
+  grid-area: clear;
+}
+
+#divide{
+  grid-area: divide;
+}
+
+#equals{
+  grid-area: equals;
+}
+
+#negative{
+  grid-area: negative;
+}
+
+#percentage{
+  grid-area: percentage;
+}
+
+#add{
+  grid-area: add;
+}
+
+#subtract{
+  grid-area: subtract;
+}
+
+#multiply{
+  grid-area: multiply;
+}
+
+#seven{
+  grid-area: seven;
+}
+
+#eight{
+  grid-area: eight;
+}
+
+#nine{
+  grid-area: nine;
+}
+
+#four{
+  grid-area: four;
+}
+
+#five{
+  grid-area: five;
+}
+
+#six{
+  grid-area: six;
+}
+
+#one{
+  grid-area: one;
+}
+
+#two{
+  grid-area: two;
+}
+
+#three{
+  grid-area: three;
+}
+
+#zero{
+  grid-area: zero;
+  
+}
+
+#decimal{
+  grid-area: decimal;
+}
+
+#display{
+  grid-area: display;
+}
+
